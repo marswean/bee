@@ -6,7 +6,7 @@
 
 	<link rel="stylesheet" media="screen" href="style.css?v=8may2013">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
-
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Dave Shea">
 	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
@@ -166,7 +166,7 @@
 					</li>
 					<li class="zen-faq">
 						<a href="http://www.mezzoblue.com/zengarden/faq/" title="A list of Frequently Asked Questions about the Zen Garden.">
-							<abbr title="Frequently Asked Questions">FAQ</abbr>						</a>
+							<abbr id="FAQ" title="Frequently Asked Questions">FAQ</abbr>						</a>
 					</li>
 					<li class="zen-submit">
 						<a href="http://www.mezzoblue.com/zengarden/submit/" title="Send in your own CSS file.">
@@ -195,4 +195,9 @@
 <div class="extra4" role="presentation"></div><div class="extra5" role="presentation"></div><div class="extra6" role="presentation"></div>
 
 </body>
+<script>
+$('#FAQ').click(function(e){
+	alert(1231);
+})
+</script>
 </html>
