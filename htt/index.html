@@ -11,7 +11,11 @@
 </body>
 <script>
 	$(document).ready(function(e) {
-		console.log(e);
+		let ls = window.localStorage;
+		$('#check').click(function(e) {
+			console.log(ls.getItem('test'));
+			ls.setItem('test','a');
+		});
 	});
 </script>
 </html>
