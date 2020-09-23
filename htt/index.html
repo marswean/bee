@@ -12,6 +12,7 @@
 <script>
 	$(document).ready(function(e) {
 		let ls = window.localStorage;
+		console.log(ls);
 		$('#check').click(function(e) {
 			console.log(ls.getItem('test'));
 			ls.setItem('test','a');
